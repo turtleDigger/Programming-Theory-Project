@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Human : Humanoid // INHERITANCE
+public class Elfe : Humanoid
 {
     void Start()
     {
-        Init(" Human", 6, 6);// INHERITANCE and Init() is an // ABSTRACTION
+        Init("n Elfe", 6, 10);// INHERITANCE and Init() is an // ABSTRACTION
     }
 
     protected override void Insecurity()// POLYMORPHISME
     {
-        speech += "\nYou're ok with humans, right?";
+        speech += "\nDo you think my ears are pointed enough?";
     }
 }
